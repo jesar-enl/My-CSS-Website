@@ -157,8 +157,7 @@ ul.topnav li a:hover {
 .slopeIcon img {
   display: block;
   margin: auto;
-  box-shadow: -2px -2px 5px 2px rgba(0, 0, 0, 0.15),
-    2px 2px 4px 2px rgba(0, 0, 0, 1);
+  box-shadow: -2px -2px 5px 2px rgba(0, 0, 0, 0.15), 2px 2px 4px ;
 }
 
 button {
