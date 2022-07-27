@@ -235,7 +235,6 @@ input[type='password'] {
 
 .footsy {
   background-color: #666;
-  padding-left: 10%;
 }
 
 .footsy h2 {
@@ -252,7 +251,7 @@ input[type='password'] {
 .footsy ul li {
   color: #fff;
   font-size: 1.4rem;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 /* ############ Media Query ########### */
@@ -308,11 +307,6 @@ input[type='password'] {
   .col-5 {
     width: 100%;
     margin: 0;
-  }
-
-  .mobileStack {
-    width: 50%;
-    display: block;
   }
 
   .rightSideCol {

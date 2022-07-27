@@ -235,7 +235,7 @@ input[type='password'] {
 
 .footsy {
   background-color: #666;
-  padding-left: 10%;
+  padding-left: ;
 }
 
 .footsy h2 {
@@ -308,11 +308,6 @@ input[type='password'] {
   .col-5 {
     width: 100%;
     margin: 0;
-  }
-
-  .mobileStack {
-    width: 50%;
-    display: block;
   }
 
   .rightSideCol {
