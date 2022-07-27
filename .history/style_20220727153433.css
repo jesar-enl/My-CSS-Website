@@ -174,9 +174,7 @@ button {
   margin: 5px;
 }
 
-button:hover {
-  background-color: #7ab6f3;
-}
+:
 
 .learnMore {
   display: block;
