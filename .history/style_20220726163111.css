@@ -1,0 +1,115 @@
+/* ########## Defaults ########### */
+
+nav,
+header,
+footer {
+  display: block;
+}
+
+body {
+  line-height: 1.5;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+/* ######### Navigation Bar ######## */
+
+nav {
+  width: 100%;
+  margin: 0;
+}
+
+nav ul {
+  background-color: #eee;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+/* the list-style removes the bullet points from the list items */
+ul.topnav li {
+  list-style: none;
+  float: left;
+}
+
+ul.topnav li.topnav-right {
+  float: right;
+}
+
+ul.topnav li a {
+  display: block;
+  text-decoration: none;
+  min-height: 1.5rem;
+  text-align: center;
+  padding: 14px;
+  text-transform: uppercase;
+  color: #665;
+}
+
+ul.topnav li a:hover {
+  background-color: #7ab6f3;
+  color: #fff;
+}
+
+.dropdown {
+  display: none;
+}
+
+/* #################### Custom styles ################## */
+
+#section-1-gradient {
+  background: blue;
+  background: -webkit-gradient(rgb(20, 20, 78), rgb(67, 67, 134));
+  background: -o-linear-gradient(rgb(20, 20, 78), rgb(67, 67, 134));
+  background: -moz-linear-gradient(rgb(20, 20, 78), rgb(67, 67, 134));
+  background: linear-gradient(rgb(20, 20, 78), rgb(67, 67, 134));
+}
+
+/* ############ Media Query ########### */
+
+@media screen and (max-width: 680px) {
+  /* 
+    This tells the browser to hide all the list
+    elements of the nav bar except the first one. 
+  */
+
+  ul.topnav li:not(:nth-child(1)) {
+    display: none;
+  }
+
+  ul.topnav li.dropdown {
+    display: block;
+    float: right;
+  }
+
+  ul.topnav.responsive li.dropdown {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  ul.topnav.responsive {
+    position: relative;
+  }
+
+  /* Places the list items in a row manner. */
+  ul.topnav.responsive li {
+    display: inline;
+    float: none;
+  }
+
+  ul.topnav.responsive li a {
+    /* displays the items in a manner of stacking on top of each other. */
+    display: block;
+    text-align: left;
+  }
+
+  ul.topnav.responsive li.dropdown {
+    /* display: none; */
+  }
+}

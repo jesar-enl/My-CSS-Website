@@ -1,0 +1,320 @@
+/* ########## Defaults ########### */
+
+nav,
+header,
+footer {
+  display: block;
+}
+
+body {
+  line-height: 1.5;
+  margin: 0;
+}
+
+label {
+  font-size: 35px;
+  font-weight: 800;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.row::after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ######### Navigation Bar ######## */
+
+nav {
+  width: 100%;
+  margin: 0;
+}
+
+nav ul {
+  background-color: #eee;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+/* the list-style removes the bullet points from the list items */
+ul.topnav li {
+  list-style: none;
+  float: left;
+}
+
+ul.topnav li.topnav-right {
+  float: right;
+}
+
+ul.topnav li a {
+  display: block;
+  text-decoration: none;
+  min-height: 1.5rem;
+  text-align: center;
+  padding: 14px;
+  text-transform: uppercase;
+  color: #665;
+}
+
+ul.topnav li a:hover {
+  background-color: #7ab6f3;
+  color: #fff;
+}
+
+.dropdown {
+  display: none;
+}
+
+/* #################### Custom styles ################## */
+
+#section-1-gradient {
+  background: #076dff;
+  background: -webkit-gradient(#076dff, #65a5ff);
+  background: -o-linear-gradient(#076dff, #65a5ff);
+  background: -moz-linear-gradient(#076dff, #65a5ff);
+  background: linear-gradient(#076dff, #65a5ff);
+}
+
+.box {
+  overflow: hidden;
+  text-align: center;
+  margin: 24px;
+  padding: 36px 24px 40px 24px
+  background-color: #fff;
+  /* 
+    The "box-shadow" syntax is as follows:
+
+    box-shadow: horizontal-length vertical-length blur-radius spread-radius rgba(r, g, b, opacity);
+  */
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+.leftSideCol {
+  margin-left: 15%;
+}
+
+.rightSideCol {
+  margin-left: 15%;
+}
+
+.large {
+  color: #fff;
+  font-size: 2.2rem;
+  margin: 0;
+  line-height: 1.7;
+}
+
+.section-2-header {
+  font-size: 3rem;
+  text-align: center;
+}
+
+input[type='text'] {
+  font-size: 20px;
+  width: 400px;
+  min-width: 100px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+form h2 {
+  color: #fff;
+}
+
+input[type='password'] {
+  font-size: 20px;
+  width: 400px;
+  padding: 5px;
+  min-width: 100px;
+  border-radius: 10px;
+}
+
+.icon {
+  width: 100%;
+}
+
+.dev {
+  width: 110px;
+  height: 110px;
+}
+
+/* ############ Media Query ########### */
+
+@media screen and (max-width: 680px) {
+  /* 
+    This tells the browser to hide all the list
+    elements of the nav bar except the first one. 
+  */
+
+  ul.topnav li:not(:nth-child(1)) {
+    display: none;
+  }
+
+  ul.topnav li.dropdown {
+    display: block;
+    float: right;
+  }
+
+  ul.topnav.responsive li.dropdown {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  ul.topnav.responsive {
+    position: relative;
+  }
+
+  /* Places the list items in a row manner. */
+  ul.topnav.responsive li {
+    display: inline;
+    float: none;
+  }
+
+  ul.topnav.responsive li a {
+    /* displays the items in a manner of stacking on top of each other. */
+    display: block;
+    text-align: left;
+  }
+
+  .col-6 {
+    width: 100%;
+    margin: 0;
+  }
+
+  .rightSideCol {
+    margin-top: 5%;
+  }
+
+  .videoContainer iframe {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  leftSideCol,
+  rightSideCol {
+    margin: 15px;
+  }
+
+  input[type='text'] {
+    width: 300px;
+  }
+
+  input[type='password'] {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  /* 
+    This tells the browser to hide all the list
+    elements of the nav bar except the first one. 
+  */
+
+  ul.topnav li:not(:nth-child(1)) {
+    display: none;
+  }
+
+  ul.topnav li.dropdown {
+    display: block;
+    float: right;
+  }
+
+  ul.topnav.responsive li.dropdown {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  ul.topnav.responsive {
+    position: relative;
+  }
+
+  /* Places the list items in a row manner. */
+  ul.topnav.responsive li {
+    display: inline;
+    float: none;
+  }
+
+  ul.topnav.responsive li a {
+    /* displays the items in a manner of stacking on top of each other. */
+    display: block;
+    text-align: left;
+  }
+
+  .col-6 {
+    width: 100%;
+    margin: 0;
+  }
+
+  .rightSideCol {
+    margin-top: 5%;
+    max-width: 300px;
+  }
+
+  .videoContainer iframe {
+    position: relative;
+    width: 100%;
+  }
+}

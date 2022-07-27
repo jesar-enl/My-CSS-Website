@@ -1,0 +1,32 @@
+body {
+  background-color: #202020;
+  color: #fff;
+}
+
+h1 {
+  color: #bada55;
+}
+
+p {
+  border: 2px #fff solid;
+}
+
+span {
+  text-decoration: underline;
+}
+
+li {
+  background-color: rgba(0, 50, 200, 0.6);
+}
+
+#feed {
+  color: #ff3030;
+}
+
+#feeli::marker {
+  color: #ff3030;
+}
+
+.make {
+  color: #00ff00;
+}
