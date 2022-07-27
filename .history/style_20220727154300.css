@@ -277,9 +277,7 @@ input[type='password'] {
   }
 
   .col-6,
-  .col-4,
-  .col-7,
-  .col-5 {
+  .col-4, .col {
     width: 100%;
     margin: 0;
   }
@@ -313,6 +311,8 @@ input[type='password'] {
     padding: 5px;
     display: block;
   }
+
+
 }
 
 @media screen and (max-width: 890px) {
